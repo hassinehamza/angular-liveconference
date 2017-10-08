@@ -1322,8 +1322,8 @@ angular.module('op.live-conference')
 'use strict';
 
 angular.module('op.live-conference')
-  .factory('webRTCService', ['easyRTCAdapter', function(easyRTCAdapter) {
-    var adapter = easyRTCAdapter;
+  .factory('webRTCService', ['janusRTCAdapter', function(janusRTCAdapter) {
+    var adapter = janusRTCAdapter;
 
     return {
         leaveRoom: adapter.leaveRoom,
